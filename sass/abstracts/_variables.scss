@@ -1,34 +1,21 @@
-// COLOR
+/***** COLOR *****/
 $color-primary: #edebe4;
 $color-secondary: #74642f;
 $color-global: #f3f2ec;
-
 $color-text-brand: #999999;
-
 $color-gray-dark-2: #e0e0e0;
 $color-gray-dark-3: #333;
 $color-gray-dark: #777;
 $color-white: #fff;
 $color-black: #222222;
 
-//FONT SIZE
+/***** FONT SIZE *****/
 $default-font-size: 1.6rem;
 $title-font-size: 7rem;
 $title-font-size-2: 6.5rem;
 
-//GRID
+/***** GRID *****/
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-vertical-small: 6rem;
 $gutter-horizontal: 4rem;
-
-$section-padding-t: 18rem;
-$section-padding-b: 18rem;
-$section-padding-b-2: 10rem;
-$section-padding-tb: 18rem;
-
-@include respond(tab-port) {
-  $section-padding-t: 14rem;
-  $section-padding-b: 14rem;
-  $section-padding-tb: 14rem;
-}

@@ -12,13 +12,18 @@
   &__social-icon {
     i {
       margin-right: 3rem;
+      cursor: pointer;
+      &:hover {
+        transform: skewY(2deg) skewX(15deg);
+        text-shadow: 0.5rem 1rem 2rem rgba($color-black, 1);
+      }
     }
   }
 
   &__items {
     display: flex;
     float: right;
-
+    cursor: pointer;
     i {
       margin-right: 1rem;
     }
@@ -35,6 +40,12 @@
 
     &__search {
       padding: 0 0 0 2.5rem;
+      input {
+        outline: none;
+        width: 6rem;
+        border: 0;
+        background-color: $color-global;
+      }
     }
   }
   &__bottom {
@@ -51,8 +62,16 @@
         li {
           list-style: none;
           margin-right: 5rem;
+          &:hover {
+            transform: skewY(2deg) skewX(15deg);
+            text-shadow: 0.5rem 1rem 2rem rgba($color-black, 1);
+          }
           &:last-child {
             margin-right: 0;
+          }
+          a {
+            text-decoration: none;
+            color: $color-gray-dark;
           }
         }
       }

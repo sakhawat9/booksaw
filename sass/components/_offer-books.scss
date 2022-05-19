@@ -1,11 +1,7 @@
 .offer-books {
   overflow: hidden;
   position: relative;
-  margin-bottom: $section-padding-b;
 
-  @include respond(tab-port) {
-    margin-bottom: $section-padding-b-2;
-  }
   &-title {
     padding: 13.5rem 0 20rem 0;
     background-color: $color-primary;
@@ -136,7 +132,7 @@
   &__btn {
     position: absolute;
     right: 20%;
-    bottom: 0;
+    bottom: 9rem;
     height: 3rem !important;
     width: 17rem !important;
     padding: 0 !important;
@@ -145,6 +141,7 @@
 
     @include respond(tab-port) {
       right: 0;
+      bottom: 4rem;
     }
   }
 }

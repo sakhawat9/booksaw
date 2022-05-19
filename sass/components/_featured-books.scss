@@ -1,11 +1,6 @@
 .featured-books {
   overflow: hidden;
   position: relative;
-  margin-bottom: $section-padding-b;
-
-  @include respond(tab-port) {
-    margin-bottom: $section-padding-b-2;
-  }
 
   &__nav {
     ul {
@@ -158,7 +153,7 @@
   &__btn {
     position: absolute;
     right: 20%;
-    bottom: 0;
+    bottom: 9rem;
     height: 3rem !important;
     width: 18rem !important;
     padding: 0 !important;
@@ -166,6 +161,7 @@
     border-bottom: 1px solid $color-black !important;
     @include respond(tab-port) {
       right: 0;
+      bottom: 4rem;
     }
   }
 }

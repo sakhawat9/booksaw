@@ -1,23 +1,13 @@
 .section-associated {
   background-color: $color-primary;
   padding: 8.5rem 0 7.5rem 0;
-  margin-bottom: $section-padding-b;
   overflow: hidden;
-
-  @include respond(tab-port) {
-    margin-bottom: $section-padding-b-2;
-  }
   img {
     width: 100%;
   }
 }
 
 .quote-day {
-  margin-bottom: $section-padding-b;
-
-  @include respond(tab-port) {
-    margin-bottom: $section-padding-b-2;
-  }
   p {
     font-size: $default-font-size;
     max-width: 500px;

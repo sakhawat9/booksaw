@@ -2,13 +2,11 @@
   background-image: url(../img/subscribe-bg.png);
   background-repeat: no-repeat;
   background-position: top left;
-  margin-bottom: $section-padding-b;
   padding: 11rem 0;
   overflow: hidden;
   background-color: $color-primary;
 
   @include respond(tab-port) {
-    margin-bottom: $section-padding-b-2;
     text-align: center;
   }
   &__content {

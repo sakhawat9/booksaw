@@ -3,11 +3,9 @@
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: left bottom;
-  margin-bottom: $section-padding-b;
+  padding: 11rem 0;
+  background-color: $color-primary;
 
-  @include respond(tab-port) {
-    margin-bottom: $section-padding-b-2;
-  }
   &__image {
     margin: 0 25% 0 25%;
 
@@ -15,6 +13,7 @@
       margin: 0;
       text-align: center;
     }
+
     img {
       border-radius: 0.5rem;
       width: 41rem;

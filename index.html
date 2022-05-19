@@ -4,22 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/be87188dd9.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Prata&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
+    <!--***** PAGE TITLE *****-->
     <title>Booksaw</title>
+    <!--***** FONT AWESOME *****-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!--***** FONT FAMILY *****-->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Prata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!--***** HEADER MOBILE MENU START *****-->
     <div class="navigation">
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
@@ -46,7 +40,10 @@
         </ul>
       </nav>
     </div>
-    <header class="header">
+    <!--***** HEADER MOBILE MENU END *****-->
+    <!--***** HEADER MENU START *****-->
+    <header class="header md-section-padding-b">
+      <!-- MOBILE HEADER START -->
       <div class="header__mobile-menu__area">
         <div class="header__mobile-menu">
           <div class="header__mobile-menu__logo">
@@ -57,13 +54,15 @@
               <li><i class="fa-solid fa-user"></i></li>
               <li><i class="fa-solid fa-bag-shopping"></i></i></li>
               <li><i class="fa-solid fa-magnifying-glass"></i></i></li>
-              <li style="z-index: 10000000"><label for="navi-toggle" class="navigation__button">
+              <li style="z-index: 10000"><label for="navi-toggle" class="navigation__button">
                 <span class="navigation__icon">&nbsp;</span>
               </label></li>
             </ul>
           </div>
         </div>
       </div>
+      <!-- MOBILE HEADER END -->
+      <!-- TOP HEADER START -->
       <div class="header__top">
         <div class="row">
           <div class="col-1-of-2">
@@ -86,30 +85,36 @@
               </div>
               <div class="header__items__search">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <span>Search</span>
+                <input type="text" placeholder="SEARCH">
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- TOP HEADER END -->
+      <!-- BOTTOM HEADER START -->
       <div class="header__bottom container">
         <div class="header__logo">
           <img src="img/logo.png" alt="Booksaw logo" />
         </div>
         <div class="header__bottom__content">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Pages</li>
-            <li>Shop</li>
-            <li>Articles</li>
-            <li>Content</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Content</a></li>
+            <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
           </ul>
         </div>
       </div>
+      <!-- BOTTOM HEADER END -->
     </header>
+    <!--***** HEADER MENU END *****-->
     <main>
-      <section class="hero">
+      <!--***** HERO SECTION START *****-->
+      <section class="hero section-padding">
         <div class="row hero__area">
           <div class="hero__section">
             <div class="col-1-of-2">
@@ -134,7 +139,9 @@
           </div>
         </div>
       </section>
-      <section class="section-associated">
+      <!--***** HERO SECTION END *****-->
+      <!--***** ASSOCIATED SECTION START *****-->
+      <section class="section-associated section-margin">
         <div class="row">
           <div class="col-1-of-5">
             <img src="img/1.png" alt="" />
@@ -153,12 +160,18 @@
           </div>
         </div>
       </section>
-      <section class="featured-books">
+      <!--***** ASSOCIATED SECTION END *****-->
+      <!--***** FEATURED BOOKS SECTION START *****-->
+      <section class="featured-books section-padding">
+        <!-- TITLE START -->
         <div class="u-center-text u-margin-bottom-big">
           <p class="header-tertiary">Some quality items</p>
           <h2 class="header-secondary">Featured Books</h2>
         </div>
+        <!-- TITLE END -->
+        <!-- CONTENT -->
         <div class="row featured-books__content">
+          <!-- SINGLE FEATURED START -->
           <div class="col-1-of-4">
             <div class="featured-books__item">
               <figure class="featured-books__item__top">
@@ -178,6 +191,8 @@
               </div>
             </div>
           </div>
+          <!-- SINGLE FEATURED END -->
+          <!-- SINGLE FEATURED START -->
           <div class="col-1-of-4">
             <div class="featured-books__item">
               <figure class="featured-books__item__top">
@@ -197,6 +212,8 @@
               </div>
             </div>
           </div>
+          <!-- SINGLE FEATURED END -->
+          <!-- SINGLE FEATURED START -->
           <div class="col-1-of-4">
             <div class="featured-books__item">
               <figure class="featured-books__item__top">
@@ -213,6 +230,8 @@
               <p class="featured-books__item__bottom-price">$ 45.00</p>
             </div>
           </div>
+          <!-- SINGLE FEATURED END -->
+          <!-- SINGLE FEATURED START -->
           <div class="col-1-of-4">
             <div class="featured-books__item">
               <figure class="featured-books__item__top">
@@ -230,6 +249,7 @@
               </div>
             </div>
           </div>
+          <!-- SINGLE FEATURED END -->
         </div>
         <div class="featured-books__dots">
           <div class="featured-books__dots__dot"></div>
@@ -240,7 +260,9 @@
           >View All Product &rarr;</a
         >
       </section>
-      <section class="best-selling">
+      <!--***** FEATURED BOOKS SECTION END *****-->
+      <!--***** BEST SELLING SECTION START *****-->
+      <section class="best-selling section-margin">
         <div class="row">
           <div class="col-1-of-2">
             <div class="best-selling__image">
@@ -269,11 +291,16 @@
           </div>
         </div>
       </section>
-      <section class="featured-books">
+      <!--***** BEST SELLING SECTION END *****-->
+      <!--***** POPULAR BOOKS SECTION START *****-->
+      <section class="featured-books  section-padding">
+        <!-- TITLE START -->
         <div class="u-center-text u-margin-bottom-small">
           <p class="header-tertiary">Some quality items</p>
           <h2 class="header-secondary">Popular Books</h2>
         </div>
+        <!-- TITLE END -->
+        <!-- POPULAR MENU START -->
         <div class="featured-books__nav u-margin-bottom-big">
           <ul>
             <li class="active">All Gener</li>
@@ -284,7 +311,10 @@
             <li>Fictional</li>
           </ul>
         </div>
+        <!-- POPULAR MENU END -->
+      
         <div class="row featured-books__content-start">
+          <!-- POPULAR BOOKS START -->
           <div class="col-1-of-4">
             <div class="featured-books__item">
               <figure class="featured-books__item__top">
@@ -304,6 +334,8 @@
               </div>
             </div>
           </div>
+          <!-- POPULAR BOOKS END -->
+          <!-- POPULAR BOOKS START -->
           <div class="col-1-of-4">
             <div class="featured-books__item">
               <figure class="featured-books__item__top">
@@ -323,6 +355,8 @@
               </div>
             </div>
           </div>
+          <!-- POPULAR BOOKS END -->
+          <!-- POPULAR BOOKS START -->
           <div class="col-1-of-4">
             <div class="featured-books__item">
               <figure class="featured-books__item__top">
@@ -339,6 +373,8 @@
               <p class="featured-books__item__bottom-price">$ 45.00</p>
             </div>
           </div>
+          <!-- POPULAR BOOKS END -->
+          <!-- POPULAR BOOKS START -->
           <div class="col-1-of-4">
             <div class="featured-books__item">
               <figure class="featured-books__item__top">
@@ -357,7 +393,9 @@
             </div>
           </div>
         </div>
+        <!-- POPULAR BOOKS END -->
         <div class="row featured-books__content-end">
+          <!-- POPULAR BOOKS START -->
           <div class="col-1-of-4">
             <div class="featured-books__item">
               <figure class="featured-books__item__top">
@@ -375,6 +413,8 @@
               </div>
             </div>
           </div>
+          <!-- POPULAR BOOKS END -->
+          <!-- POPULAR BOOKS START -->
           <div class="col-1-of-4">
             <div class="featured-books__item">
               <figure class="featured-books__item__top">
@@ -392,6 +432,8 @@
               </div>
             </div>
           </div>
+          <!-- POPULAR BOOKS END -->
+          <!-- POPULAR BOOKS START -->
           <div class="col-1-of-4">
             <div class="featured-books__item">
               <figure class="featured-books__item__top">
@@ -409,6 +451,8 @@
               </div>
             </div>
           </div>
+          <!-- POPULAR BOOKS END -->
+          <!-- POPULAR BOOKS START -->
           <div class="col-1-of-4">
             <div class="featured-books__item">
               <figure class="featured-books__item__top">
@@ -426,9 +470,12 @@
               </div>
             </div>
           </div>
+          <!-- POPULAR BOOKS END -->
         </div>
       </section>
-      <section class="quote-day">
+      <!--***** POPULAR BOOKS SECTION END *****-->
+      <!--***** QUOTE OF THE DAY SECTION START *****-->
+      <section class="quote-day section-padding">
         <div class="u-center-text">
           <div class="u-center-text">
             <h2 class="header-secondary">Quote of the day</h2>
@@ -441,12 +488,17 @@
           <p class="quote-day__name">Dr.Seuss</p>
         </div>
       </section>
-      <section class="offer-books">
+      <!--***** QUOTE OF THE DAY SECTION END *****-->
+      <!--***** OFFER BOOKS SECTION START *****-->
+      <section class="offer-books section-padding">
+        <!-- TITLE START -->
         <div class="u-center-text offer-books-title">
           <p class="header-tertiary">Grab your opportunity</p>
           <h2 class="header-secondary">Books with offer</h2>
         </div>
+        <!-- TITLE END -->
         <div class="row offer-books__content offer-books-title__content">
+          <!-- OFFER BOOKS START -->
           <div class="col-1-of-4">
             <div class="offer-books__item">
               <figure class="offer-books__item__top">
@@ -467,6 +519,8 @@
               </div>
             </div>
           </div>
+          <!-- OFFER BOOKS END -->
+          <!-- OFFER BOOKS START -->
           <div class="col-1-of-4">
             <div class="offer-books__item">
               <figure class="offer-books__item__top">
@@ -487,6 +541,8 @@
               </div>
             </div>
           </div>
+          <!-- OFFER BOOKS END -->
+          <!-- OFFER BOOKS START -->
           <div class="col-1-of-4">
             <div class="offer-books__item">
               <figure class="offer-books__item__top">
@@ -506,6 +562,8 @@
               </p>
             </div>
           </div>
+          <!-- OFFER BOOKS END -->
+          <!-- OFFER BOOKS START -->
           <div class="col-1-of-4">
             <div class="offer-books__item">
               <figure class="offer-books__item__top">
@@ -526,6 +584,7 @@
               </div>
             </div>
           </div>
+          <!-- OFFER BOOKS END -->
         </div>
         <div class="offer-books__dots">
           <div class="offer-books__dots__dot"></div>
@@ -536,42 +595,51 @@
           >View All Product &rarr;</a
         >
       </section>
-      <section class="subscribe">
-        <div class="row">
-          <div class="col-1-of-2">
-            <div>
-              <h2 class="header-secondary">
-                Subscribe to <br />
-                our newsletter
-              </h2>
+      <!--***** OFFER BOOKS SECTION END *****-->
+      <!--***** SUBSCRIBE SECTION START *****-->
+      <section class="section-padding">
+        <div class="subscribe">
+          <div class="row">
+            <div class="col-1-of-2">
+              <div>
+                <h2 class="header-secondary">
+                  Subscribe to <br />
+                  our newsletter
+                </h2>
+              </div>
+  
+              <img src="img/vector.png" alt="vector image" />
             </div>
-
-            <img src="img/vector.png" alt="vector image" />
-          </div>
-          <div class="col-1-of-2">
-            <div class="subscribe__content">
-              <p>
-                Sed eu feugiat amet, libero ipsum enim pharetra hac dolor sit
-                amet, <br />
-                consectetur. Elit adipiscing enim pharetra hac.
-              </p>
-              <div class="subscribe__input-area">
-                <input
-                  type="text"
-                  placeholder="Enter your email addresss here"
-                />
-                <span>Send<i class="fa-solid fa-paper-plane"></i></span>
+            <div class="col-1-of-2">
+              <div class="subscribe__content">
+                <p>
+                  Sed eu feugiat amet, libero ipsum enim pharetra hac dolor sit
+                  amet, <br />
+                  consectetur. Elit adipiscing enim pharetra hac.
+                </p>
+                <div class="subscribe__input-area">
+                  <input
+                    type="text"
+                    placeholder="Enter your email addresss here"
+                  />
+                  <span>Send<i class="fa-solid fa-paper-plane"></i></span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="latest-articles">
+      <!--***** SUBSCRIBE SECTION END *****-->
+      <!--***** LATEST ARTICLES SECTION START *****-->
+      <section class="latest-articles section-padding">
+        <!-- TITLE START -->
         <div class="u-center-text u-margin-bottom-big">
           <p class="header-tertiary">Some quality items</p>
           <h2 class="header-secondary">Most popular tours</h2>
         </div>
+        <!-- TITLE END -->
         <div class="row latest-articles__content">
+          <!-- LATEST ARTICLES START -->
           <div class="col-1-of-3">
             <div class="latest-articles__top">
               <img src="img/rectangle.png" alt="Rectangle" />
@@ -587,6 +655,8 @@
               </ul>
             </div>
           </div>
+          <!-- LATEST ARTICLES END -->
+          <!-- LATEST ARTICLES START -->
           <div class="col-1-of-3">
             <div class="latest-articles__top">
               <img src="img/rectangle2.png" alt="Rectangle2" />
@@ -602,6 +672,8 @@
               </ul>
             </div>
           </div>
+          <!-- LATEST ARTICLES END -->
+          <!-- LATEST ARTICLES START -->
           <div class="col-1-of-3">
             <div class="latest-articles__top">
               <img src="img/rectangle3.png" alt="Rectangle3" />
@@ -617,36 +689,43 @@
               </ul>
             </div>
           </div>
+          <!-- LATEST ARTICLES END -->
         </div>
         <div class="latest-articles__btn">
           <a href="#" class="btn-text">read all articles &rarr;</a>
         </div>
       </section>
-      <section class="download-app">
-        <div class="container">
-          <div class="download-app__content">
-            <div class="download-app__image">
-              <img src="img/phone.png" alt="Phone" />
-            </div>
-            <div class="download-app__box">
-              <div class="u-margin-bottom-small download-app__title">
-                <h2 class="header-secondary">Download our app now !</h2>
-                <img src="img/vector.png" alt="vector image" />
+      <!--***** LATEST ARTICLES SECTION END *****-->
+      <!--***** DOWNLOAD APP SECTION START *****-->
+      <section class="section-padding">
+        <div class="download-app">
+          <div class="container">
+            <div class="download-app__content">
+              <div class="download-app__image">
+                <img src="img/phone.png" alt="Phone" />
               </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sagittis sed ptibus liberolectus nonet psryroin. Amet sed lorem
-                posuere sit iaculis amet, ac urna. Adipiscing fames semper erat
-                ac in suspendisse iaculis.
-              </p>
-              <div class="download-app__logo">
-                <img src="img/google-play.png" alt="Google Play" />
-                <img src="img/app-store.png" alt="App store" />
+              <div class="download-app__box">
+                <div class="u-margin-bottom-small download-app__title">
+                  <h2 class="header-secondary">Download our app now !</h2>
+                  <img src="img/vector.png" alt="vector image" />
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Sagittis sed ptibus liberolectus nonet psryroin. Amet sed lorem
+                  posuere sit iaculis amet, ac urna. Adipiscing fames semper erat
+                  ac in suspendisse iaculis.
+                </p>
+                <div class="download-app__logo">
+                  <img src="img/google-play.png" alt="Google Play" />
+                  <img src="img/app-store.png" alt="App store" />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!--***** DOWNLOAD APP SECTION END *****-->
+      <!--***** FOOTER SECTION START *****-->
       <footer class="footer">
         <div class="row footer__top">
           <div class="col-2-of-6">
@@ -712,6 +791,7 @@
           </div>
         </div>
       </footer>
+      <!--***** FOOTER END *****-->
     </main>
   </body>
 </html>

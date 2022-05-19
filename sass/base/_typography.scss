@@ -15,14 +15,66 @@ h6 {
   font-family: "Prata", serif;
 }
 
+/***CONTAINER***/
 .container {
   max-width: 114rem;
   margin: 0 auto;
 }
 
-// .title {
-//   @include header-title($title-font-size);
-// }
+/***SECTION PADDING***/
+.section-padding {
+  padding: 9rem 0;
+  @include respond(tab-port) {
+    padding: 3.5rem 0;
+  }
+}
+
+.section-padding-t {
+  padding-top: 9rem;
+  @include respond(tab-port) {
+    padding-top: 3.5rem;
+  }
+}
+
+.section-padding-b {
+  padding-bottom: 9rem;
+  @include respond(tab-port) {
+    padding-bottom: 3.5rem;
+  }
+}
+.md-section-padding-b {
+  padding-bottom: 9rem;
+  @include respond(tab-port) {
+    padding-bottom: 3.5rem;
+  }
+}
+.md-section-padding-b {
+  padding-bottom: 9rem;
+  @include respond(tab-port) {
+    padding-bottom: 0;
+  }
+}
+
+.section-margin {
+  margin: 9rem 0;
+  @include respond(tab-port) {
+    margin: 3.5rem 0;
+  }
+}
+
+.section-margin-t {
+  margin-top: 9rem;
+  @include respond(tab-port) {
+    margin-top: 3.5rem;
+  }
+}
+
+.section-margin-b {
+  margin-bottom: 9rem;
+  @include respond(tab-port) {
+    margin-bottom: 3.5rem;
+  }
+}
 
 .paragraph {
   font-size: $default-font-size;
@@ -31,6 +83,8 @@ h6 {
   }
 }
 
+/***TITLE STYLE***/
+// title primary
 .heading-primary {
   @include header-title($title-font-size);
   @include respond(tab-port) {
@@ -46,6 +100,7 @@ h6 {
   }
 }
 
+// title secondary
 .header-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
@@ -61,6 +116,7 @@ h6 {
   }
 }
 
+// title tertiary
 .header-tertiary {
   margin-bottom: 2rem;
   font-size: 1.3rem;
