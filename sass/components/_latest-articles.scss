@@ -1,0 +1,49 @@
+.latest-articles {
+  margin-bottom: $section-padding-b;
+  overflow: hidden;
+
+  @include respond(tab-port) {
+    margin-bottom: $section-padding-b-2;
+  }
+  &__content {
+    overflow: hidden;
+  }
+  &__top {
+    border-bottom: 1px solid $color-gray-dark;
+    img {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+    p {
+      color: $color-secondary;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    h3 {
+      font-size: 2.6rem;
+      font-weight: 400;
+      color: $color-black;
+      margin-bottom: 2.6rem;
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin-top: 1.8rem;
+    ul {
+      display: flex;
+      li {
+        list-style: none;
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    text-align: center;
+    margin-top: 6.5rem;
+  }
+}

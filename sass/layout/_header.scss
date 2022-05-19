@@ -1,0 +1,79 @@
+.header {
+  &__top {
+    padding: 2rem 0 3.5rem 0;
+    font-size: 1.2rem;
+    border-bottom: 1px solid $color-gray-dark-2;
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &__social-icon {
+    i {
+      margin-right: 3rem;
+    }
+  }
+
+  &__items {
+    display: flex;
+    float: right;
+
+    i {
+      margin-right: 1rem;
+    }
+
+    &__account {
+      padding: 0 2.5rem;
+      border-right: 1px solid $color-gray-dark-2;
+    }
+
+    &__cart {
+      padding: 0 2.5rem;
+      border-right: 1px solid $color-gray-dark-2;
+    }
+
+    &__search {
+      padding: 0 0 0 2.5rem;
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: $default-font-size;
+    padding-top: 2.5rem;
+    @include respond(tab-port) {
+      display: none;
+    }
+    &__content {
+      ul {
+        display: flex;
+        li {
+          list-style: none;
+          margin-right: 5rem;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__mobile-menu {
+    display: none;
+
+    @include respond(tab-port) {
+      display: block;
+    }
+
+    &__logo {
+      display: inline-block;
+    }
+
+    &__icon {
+      display: inline-block;
+      font-size: 20px;
+      float: right;
+      cursor: pointer;
+    }
+  }
+}

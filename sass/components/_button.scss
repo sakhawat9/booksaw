@@ -1,0 +1,26 @@
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $color-black;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid $color-gray-dark-2;
+    width: 21rem;
+    height: 6rem;
+    text-align: center;
+    padding: 12px;
+    transition: all 0.2s;
+    text-transform: uppercase;
+  }
+  &:hover {
+    background-color: $color-primary;
+    color: $color-black;
+    box-shadow: 0 0.5rem 1rem rgba($color-secondary, 0.15);
+    transform: translateY(-2px);
+  }
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
+    transform: translateY(0px);
+  }
+}

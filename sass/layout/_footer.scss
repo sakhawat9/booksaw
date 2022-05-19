@@ -1,0 +1,65 @@
+.footer {
+  overflow: hidden;
+  &__top {
+    overflow: hidden;
+    padding: 11rem 0 6.5rem 0;
+  }
+  &__logo {
+    font-size: 4.8rem;
+  }
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 2.3rem;
+    color: $color-black;
+  }
+  ul {
+    li {
+      list-style: none;
+      font-size: $default-font-size;
+      margin-bottom: 1rem;
+      a {
+        color: $color-black;
+        text-decoration: none;
+      }
+      &:hover {
+        transform: skewY(2deg) skewX(15deg);
+        text-shadow: 0.5rem 1rem 2rem rgba($color-black, 1);
+      }
+    }
+  }
+  &__bottom {
+    padding: 5rem 0;
+    border-top: 1px solid $color-gray-dark;
+    &__content {
+      p {
+        display: inline-block;
+        font-size: 16px;
+
+        @include respond(tab-port) {
+          text-align: center;
+          display: block;
+         
+        }
+      }
+      ul {
+        display: inline-block;
+        float: right;
+
+        @include respond(tab-port) {
+          text-align: center;
+          display: block;
+          float: inherit;
+          margin-top: 2rem;
+        }
+        li {
+          display: inline-block;
+          font-size: 12px;
+          &:not(:last-child) {
+            margin-right: 3rem;
+          }
+        }
+      }
+    }
+  }
+}

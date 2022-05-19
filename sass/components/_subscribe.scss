@@ -1,0 +1,45 @@
+.subscribe {
+  background-image: url(../img/subscribe-bg.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  margin-bottom: $section-padding-b;
+  padding: 11rem 0;
+  overflow: hidden;
+  background-color: $color-primary;
+
+  @include respond(tab-port) {
+    margin-bottom: $section-padding-b-2;
+    text-align: center;
+  }
+  &__content {
+    p {
+      font-size: 1.6rem;
+      line-height: 208%;
+      padding-bottom: 4.5rem;
+    }
+  }
+  &__input-area {
+    max-width: 37rem;
+    border-bottom: 1px solid $color-gray-dark;
+
+    @include respond(tab-port) {
+      display: block;
+      margin: 0 auto;
+      max-width: 30rem;
+    }
+    input {
+      border: none;
+      background-color: transparent;
+      outline: none;
+      max-width: 30rem;
+      &:active {
+        outline: none;
+      }
+    }
+    span {
+      font-size: $default-font-size;
+      color: $color-black;
+      margin-top: 4.5rem;
+    }
+  }
+}

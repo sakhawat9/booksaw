@@ -1,0 +1,45 @@
+.hero {
+  &__area {
+    overflow: hidden;
+  }
+  &__section {
+    margin-top: $section-padding-t;
+    @include respond(tab-port) {
+      margin-top: 0;
+    }
+  }
+
+  &__text-box {
+    padding: 15rem 0;
+    margin-right: 5rem;
+    @include respond(tab-port) {
+      padding: 15rem 0 0 0;
+      margin-right: 0;
+      margin: 0 auto;
+      max-width: 60rem;
+      text-align: center;
+    }
+  }
+
+  &__image {
+    margin-left: 6rem;
+    @include respond(tab-port) {
+      margin-left: 0;
+      text-align: center;
+    }
+    img {
+      width: 395px;
+      height: 572px;
+      
+      @include respond(tab-port) {
+        width: 80%;
+        height: auto;
+      }
+      
+      @include respond(phone) {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

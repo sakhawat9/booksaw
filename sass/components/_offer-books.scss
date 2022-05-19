@@ -1,0 +1,150 @@
+.offer-books {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: $section-padding-b;
+
+  @include respond(tab-port) {
+    margin-bottom: $section-padding-b-2;
+  }
+  &-title {
+    padding: 13.5rem 0 20rem 0;
+    background-color: $color-primary;
+    &__content {
+      margin-top: -12rem !important;
+    }
+  }
+
+  &__content {
+    padding-bottom: 5.5rem;
+    border-bottom: 1px solid $color-gray-dark-2;
+    overflow: hidden;
+  }
+  &__item {
+    &__top {
+      background-color: $color-global;
+      border: 1px solid #eae8df;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2.4rem;
+      position: relative;
+      img {
+        width: 22rem;
+        height: 32rem;
+
+        @include respond(tab-port) {
+          width: 50%;
+          height: auto;
+        }
+
+        @include respond(phone) {
+          width: 100%;
+          height: auto;
+        }
+      }
+      span {
+        position: absolute;
+        top: 3rem;
+        left: 4.5rem;
+        padding: 0.3rem;
+        background-color: $color-secondary;
+        color: $color-white;
+        text-transform: capitalize;
+      }
+      &__add-to-cart {
+        position: absolute;
+        width: 80%;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        color: $color-white;
+        background-color: $color-black;
+        padding: 0 3rem;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.5s;
+        backface-visibility: hidden;
+        cursor: pointer;
+      }
+    }
+    &:hover &__top__add-to-cart {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+    &:hover &__bottom-title {
+      a {
+        color: $color-secondary;
+      }
+    }
+    &__bottom {
+      &-title {
+        a {
+          text-decoration: none;
+          display: block;
+          color: $color-black;
+          text-align: center;
+          font-size: 2rem;
+          line-height: 3rem;
+          padding-bottom: 0.8rem;
+          font-weight: 400;
+          text-transform: capitalize;
+        }
+      }
+      &-subtitle {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        text-align: center;
+        padding-bottom: 2rem;
+        text-transform: capitalize;
+      }
+      &-price {
+        font-size: 1.8rem;
+        text-align: center;
+        line-height: 2.4rem;
+        color: $color-secondary;
+        del {
+          font-size: 1.4rem;
+          color: $color-gray-dark;
+        }
+      }
+    }
+  }
+  &__dots {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 3rem;
+
+    @include respond(tab-port) {
+      justify-content: start;
+    }
+    &__dot {
+      width: 5px;
+      margin-right: 5px;
+      height: 5px;
+      border-radius: 50%;
+      padding: 4px;
+      border: 1px solid $color-gray-dark;
+      background-color: $color-gray-dark;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &__btn {
+    position: absolute;
+    right: 20%;
+    bottom: 0;
+    height: 3rem !important;
+    width: 17rem !important;
+    padding: 0 !important;
+    border: none !important;
+    border-bottom: 1px solid $color-black !important;
+
+    @include respond(tab-port) {
+      right: 0;
+    }
+  }
+}
